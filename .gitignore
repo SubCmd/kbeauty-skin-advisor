@@ -1,0 +1,22 @@
+# .gitignore : git에 절대 올리면 안 되는 것들
+
+# 파이썬 가상환경 및 캐시
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+
+# 비밀 사항 : API 키 등 민간함 정보
+.env
+kaggle.json
+
+
+# 데이터 : 원본은 용량, 라이선스 문제로 올리지 않음.
+data/raw/
+data/processed/
+data/index/
+# data/sample/ 은 라이선스가 허용하는 소량 샘플만 커밋
+
